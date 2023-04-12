@@ -31,14 +31,6 @@ function RestaurantCard({ cardData }) {
         <p> {cardData.costForTwoString}</p>
       </div>
     </div>
-    // <div className={classes.card}>
-    //   <li>{cardData.id}</li>
-    //   <li>{cardData.name}</li>
-    //   <li>{cardData.lastMileTravelString}</li>
-    //   <img src={IMG_CDN_URL + cardData.cloudinaryImageId} />
-    //   <li>{cardData.avgRating}</li>
-    //   <li>{cardData.costForTwoString}</li>
-    // </div>
   );
 }
 

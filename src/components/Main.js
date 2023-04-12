@@ -13,6 +13,7 @@ function Main() {
     const data = await fetch(FETCH_RESTAURANTS);
     const json = await data.json();
     if (json) {
+      console.log("JSON", json);
       console.log("Res data", json.data?.cards[2]?.data?.data?.cards); //get data from api
 
       setAllRestaurants(json.data?.cards[2]?.data?.data?.cards);
