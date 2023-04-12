@@ -1,0 +1,7 @@
+.restaurantLists {
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto 2%;
+    justify-content: center;
+    min-height: 75vh;
+  }
