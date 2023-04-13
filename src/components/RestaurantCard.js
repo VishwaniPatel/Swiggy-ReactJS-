@@ -3,7 +3,7 @@ import classes from "./RestaurantCard.module.css";
 import { IconStar } from "@tabler/icons-react";
 import { IMG_CDN_URL } from "../environment";
 function RestaurantCard({ cardData }) {
-  console.log({ cardData });
+  // Check average rating type
   let ratingType;
   if (cardData.avgRating >= 4.0) {
     ratingType = "green";
@@ -13,6 +13,7 @@ function RestaurantCard({ cardData }) {
     ratingType = "red";
   }
   return (
+    // Display restaurant card
     <div className={classes.card} key={cardData.id}>
       <img src={IMG_CDN_URL + cardData.cloudinaryImageId} />
       <div className={classes["res-name"]}>
@@ -26,7 +27,6 @@ function RestaurantCard({ cardData }) {
             <p className={classes.ratings + ratingType}>{cardData.avgRating}</p>
           </div>
         )}
-
         <p> {cardData.lastMileTravelString}</p>
         <p> {cardData.costForTwoString}</p>
       </div>

@@ -5,15 +5,16 @@ const useRestaurantDetails = (resId) => {
   //define state variables for restaurant
   const [restaurant, setRestaurant] = useState(null);
 
-  //make an API call and fetch the restaurant data with the resId provided
   useEffect(() => {
     getRestaurantDetails();
   }, []);
 
   const getRestaurantDetails = async () => {
+    //make an API call and fetch the restaurant data with the resId provided
     const response = await fetch(FETCH_MENU_URL + resId);
     const json = await response.json();
 
+    // filter menu details
     const menuItemsList =
       json.data.cards[2]["groupedCard"].cardGroupMap.REGULAR.cards;
     const itemCategory =
@@ -26,7 +27,9 @@ const useRestaurantDetails = (resId) => {
     });
 
     const resData = {
+      // Restaurant information
       info: json.data.cards[0].card.card.info,
+      // Restaurant menu details
       menu: menu.filter((value) => value !== undefined),
     };
 

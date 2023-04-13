@@ -5,8 +5,10 @@ function Header() {
   return (
     <div className={classes.header}>
       <div className={classes.logo}>
+        {/* Display logo using Logo component */}
         <Logo />
       </div>
+
       <div>
         <ul className={classes.menu}>
           <li>Home</li>
