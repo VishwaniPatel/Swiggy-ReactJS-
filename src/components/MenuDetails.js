@@ -10,7 +10,7 @@ function MenuDetails({ menuDetails }) {
   return (
     <div>
       {/* Display menu */}
-      {menuDetails.map((menu) => {
+      {menuDetails?.map((menu) => {
         return (
           <div key={menu.card.info?.id}>
             <div className={classes.dFlex}>

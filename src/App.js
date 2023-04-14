@@ -1,8 +1,8 @@
 import "./App.css";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
 import RootLayout from "./pages/Root";
-import RestaurantDetails from "./components/RestaurantDetails";
+import RestaurantDetails from "./pages/RestaurantDetails";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {

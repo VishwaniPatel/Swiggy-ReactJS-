@@ -3,9 +3,9 @@ function DiscountCoupen({ coupens }) {
   return (
     // Displaying coupen details
     <div>
-      {coupens?.map((items) => {
+      {coupens?.map((items, index) => {
         return (
-          <div className="">
+          <div key={index}>
             <p>{items?.meta}</p>
           </div>
         );

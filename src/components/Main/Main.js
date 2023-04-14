@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { FETCH_RESTAURANTS } from "../environment";
+import { FETCH_RESTAURANTS } from "../../environment";
 
-import RestaurantList from "./RestaurantList";
+import RestaurantList from "../RestaurantList";
 
 function Main() {
   const [allRestaurants, setAllRestaurants] = useState([]);

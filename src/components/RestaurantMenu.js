@@ -8,10 +8,9 @@ function RestaurantMenu({ menu }) {
   const showmenu = () => setIsVisible(true);
   return (
     <div>
-      {menu?.map((food) => {
-        console.log(food);
+      {menu?.map((food, index) => {
         return (
-          <div>
+          <div key={index}>
             <h2>
               {food.title} ({food.itemCards.length})
             </h2>

@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import useRestaurantDetails from "./GetResDetails";
-import RestaurantInfo from "./RestaurantInfo";
-import RestaurantMenu from "./RestaurantMenu";
+import useRestaurantDetails from "../components/GetResDetails";
+import RestaurantInfo from "../components/RestaurantInfo";
+import RestaurantMenu from "../components/RestaurantMenu";
 function RestaurantDetails() {
   //retrieve restaurant id from params
   const { resId } = useParams();

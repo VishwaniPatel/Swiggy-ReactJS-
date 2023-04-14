@@ -7,7 +7,6 @@ import {
 import DiscountCoupen from "./DiscountCoupen";
 import classes from "./RestaurantInfo.module.css";
 const RestaurantInfo = ({ restaurant }) => {
-  console.log(restaurant);
   return (
     <div>
       <p>
